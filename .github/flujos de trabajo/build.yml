@@ -1,0 +1,20 @@
+nombre : Construir
+en :
+  empujar :
+    ramas :
+      - maestro
+  pull_request :
+    tipos : [abierto, sincronizado, reabierto]
+trabajos :
+  sonarcloud :
+    nombre : SonarCloud
+    se ejecuta : ubuntu-latest
+    pasos :
+      - usos : acciones / pago @ v2
+        con :
+          fetch-depth : 0   # Los clones poco profundos deben desactivarse para una mejor relevancia del análisis
+      - nombre : SonarCloud Scan
+        usos : SonarSource / sonarcloud-github-action @ master
+        env :
+          GITHUB_TOKEN : $ {{secrets.GITHUB_TOKEN}}   # Necesario para obtener información de relaciones públicas, si corresponde
+          SONAR_TOKEN : $ {{secretos.SONAR_TOKEN}}
