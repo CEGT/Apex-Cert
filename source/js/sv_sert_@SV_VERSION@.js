@@ -170,11 +170,11 @@ function progress()
 
 function HtmlEncode(s)
 {
-  var el = document.createElement("div");
-  el.innerText = el.textContent = s;
-  s = el.innerHTML;
-  delete el;
-  return s;
+  //var el = document.createElement("div");
+ // el.innerText = el.textContent = s;
+  //s = el.innerHTML;
+  //delete el;
+  //return s;
 }
 
 // http://harmen.no-ip.org/javascripts/diff/
