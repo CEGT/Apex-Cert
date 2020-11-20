@@ -159,7 +159,7 @@
             <zipfileset dir="${wd}/${trunk}/syn" prefix="sert/syn" />
             <zipfileset dir="${wd}/${trunk}/tbl" prefix="sert/tbl" />
             <zipfileset dir="${wd}/${trunk}/vw" prefix="sert/vw" />
-            <!-- <zipfileset dir="${wd}/${trunk}/doc" includes="*.pdf" prefix="sert/doc" /> -->
+     
             <zipfileset dir="${wd}/${trunk}" includes="ins.sql" prefix="sert" />
             <zipfileset dir="${wd}/${trunk}" includes="ins_beta.sql" prefix="sert" />
             <zipfileset dir="${wd}/${trunk}" includes="ins_admin.sql" prefix="sert" />
