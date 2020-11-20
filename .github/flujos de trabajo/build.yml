@@ -2,7 +2,7 @@ nombre : Construir
 en :
   empujar :
     ramas :
-      - maestro
+      - test
   pull_request :
     tipos : [abierto, sincronizado, reabierto]
 trabajos :
